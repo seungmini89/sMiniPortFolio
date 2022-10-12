@@ -545,6 +545,20 @@ header .gnb li a:hover {
 #footer .footBox .footTxt {
   color: #FFEBAD;
 }
+#footer .webPage_thumb {
+  position: absolute;
+  bottom: 40px;
+  right: 170px;
+  border: 1px solid #333;
+  width: 130px;
+  padding: 3px;
+}
+#footer .webPage_thumb p {
+  font: 100 10px/1 "Noto Sans KR", sans-serif;
+}
+#footer .webPage_thumb img {
+  width: 100%;
+}
 #footer .contBox {
   position: absolute;
   bottom: 437px;
