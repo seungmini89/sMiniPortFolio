@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Sunflower:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 5200px;
+  background: #222;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 13px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(195, 248, 255);
+  border-radius: 15px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(195, 248, 255, 0.3);
+  border-radius: 15px;
+}
+
+#popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 6;
+}
+#popup .pop {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  width: 650px;
+  height: 500px;
+  background: rgb(228, 247, 255);
+  border-radius: 30px;
+  border: 10px solid red;
+}
+#popup .pop p {
+  font: 300 20px/1 "Sunflower", sans-serif;
+  margin-bottom: 20px;
+  color: #555;
+}
+#popup .pop .popTxt {
+  font: 500 20px/1 "Sunflower", sans-serif;
+  color: rgb(158, 27, 27);
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+#popup .pop #pop_Close {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+header .myLogo {
+  display: block;
+  margin: 12px 0 0 25px;
+}
+header .myLogo a img {
+  width: 110px;
+}
+header .gnb {
+  display: flex;
+  margin: 15px 25px 0 0;
+}
+header .gnb li {
+  margin-left: 40px;
+}
+header .gnb li a {
+  display: block;
+  padding: 7px;
+  color: #fff;
+  font: 20px/1 "Architects Daughter", cursive;
+}
+header .gnb li a:hover {
+  background: rgba(195, 248, 255, 0.2);
+  border-radius: 5px;
+}
+
+.docu_goTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 50px;
+  color: #C3F8FF;
+  z-index: 7;
+  display: none;
+}
+
+#home {
+  height: 1080px;
+  overflow: hidden;
+  position: relative;
+  font: 700 16px/1 "Noto Sans KR", sans-serif;
+}
+#home .homeTxt_1 {
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  font-size: 130px;
+  rotate: 15deg;
+}
+#home .homeTxt_1 .ver2022 {
+  font: 400 30px/1 "Noto Sans KR", sans-serif;
+  padding-left: 240px;
+}
+#home .homeTxt_1 .webTxt {
+  text-align: right;
+  padding-right: 300px;
+}
+#home .homeTxt_1 .webTxt::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -605px;
+  rotate: -15deg;
+  width: 880px;
+  border: 0.5px solid #444;
+}
+#home .homeTxt_1 .designTxt::after {
+  content: "";
+  position: absolute;
+  top: 163px;
+  right: -540px;
+  rotate: -15deg;
+  width: 860px;
+  border: 0.5px solid #444;
+}
+#home .homeTxt_1 .portfolio {
+  padding-left: 80px;
+  color: #FFEBAD;
+}
+#home .homeTxt_1 .portfolio::after {
+  content: "";
+  position: absolute;
+  top: 232px;
+  right: -680px;
+  rotate: -15deg;
+  width: 650px;
+  border: 0.5px solid #444;
+}
+#home .homeTxt_1 .projectTxt {
+  text-align: right;
+  padding-right: 45px;
+}
+#home .homeTxt_2 {
+  position: absolute;
+  top: 402px;
+  right: 100px;
+  font: 300 30px/1 "Noto Sans KR", sans-serif;
+  z-index: 2;
+}
+#home .homeTxt_2 .publisher {
+  margin-bottom: 93px;
+}
+#home .homeTxt_2 .webVisual {
+  margin-bottom: 100px;
+}
+#home .homeTxt_2 p::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: -25px;
+  width: 400px;
+  height: 30px;
+  background: #222;
+}
+#home .homeTxt_3 {
+  position: absolute;
+  top: 820px;
+  right: 100px;
+  font: 700 50px/1 "Sunflower", sans-serif;
+}
+#home p {
+  color: #a0a0a0;
+}
+#home span {
+  color: #C3F8FF;
+}
+
+#aboutMe {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutMe .container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 800px;
+}
+#aboutMe .container .aboutBox_1 h3 {
+  color: #eaeaea;
+  font: 700 50px/1 "Sunflower", sans-serif;
+  margin-bottom: 50px;
+}
+#aboutMe .container .aboutBox_1 .cropImg {
+  width: 300px;
+  height: 420px;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#aboutMe .container .aboutBox_1 .cropImg img {
+  margin-top: -60px;
+  width: 300px;
+}
+#aboutMe .container .aboutBox_1 .aboutIntro_1 {
+  font: 500 28px/1 "Sunflower", sans-serif;
+  color: #eaeaea;
+  margin-bottom: 40px;
+}
+#aboutMe .container .aboutBox_1 .aboutIntro_2 li {
+  font: 300 20px/1 "Sunflower", sans-serif;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+#aboutMe .container .aboutBox_1 .aboutIntro_2 li a {
+  color: #ccc;
+}
+#aboutMe .container .aboutBox_2 {
+  font: 100 16px/1 "Sunflower", sans-serif;
+  color: #7c7c7c;
+}
+#aboutMe .container .aboutBox_2 .education {
+  margin: 110px 0 110px 0;
+}
+#aboutMe .container .aboutBox_2 .education .aduTit {
+  font: 300 25px/1 "Sunflower", sans-serif;
+  color: #C3F8FF;
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_2 .education .aduMainBox li {
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_2 .education .aduMainBox li .aduMainTxt {
+  font: 300 18px/1 "Sunflower", sans-serif;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+#aboutMe .container .aboutBox_2 .certification .certiTit {
+  font: 300 25px/1 "Sunflower", sans-serif;
+  color: #C3F8FF;
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_2 .certification .certiMainBox li {
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_2 .certification .certiMainBox li .certiMainTxt {
+  font: 300 18px/1 "Sunflower", sans-serif;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+#aboutMe .container .aboutBox_3 {
+  font: 100 16px/1 "Sunflower", sans-serif;
+  color: #7c7c7c;
+}
+#aboutMe .container .aboutBox_3 .ablilty {
+  margin: 110px 0 110px 0;
+}
+#aboutMe .container .aboutBox_3 .ablilty .abliTit {
+  font: 300 25px/1 "Sunflower", sans-serif;
+  color: #C3F8FF;
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_3 .ablilty .abliMainBox li {
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_3 .ablilty .abliMainBox li .abliMainTxt {
+  font: 300 18px/1 "Sunflower", sans-serif;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+#aboutMe .container .aboutBox_3 .skills .skilTit {
+  font: 300 25px/1 "Sunflower", sans-serif;
+  color: #C3F8FF;
+  margin-bottom: 15px;
+}
+#aboutMe .container .aboutBox_3 .skills .skilMainBox {
+  width: 19.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#aboutMe .container .aboutBox_3 .skills .skilMainBox li {
+  margin: 0 15px 15px 0;
+  width: 70px;
+}
+#aboutMe .container .aboutBox_3 .skills .skilMainBox li img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#web {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#web .webContainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 800px;
+}
+#web .webContainer h3 {
+  color: #eaeaea;
+  font: 700 50px/1 "Sunflower", sans-serif;
+  margin-bottom: 80px;
+}
+#web .webContainer .webBox .webProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+#web .webContainer .webBox .webProject li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 16.5%;
+  height: 240px;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#web .webContainer .webBox .webProject li:hover em {
+  bottom: 0;
+}
+#web .webContainer .webBox .webProject li img {
+  width: 260px;
+}
+#web .webContainer .webBox .webProject li em {
+  font: 500 20px/1 "Sunflower", sans-serif;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+#web .webContainer .webBox .imgSource {
+  margin-right: 25px;
+  text-align: end;
+  color: #ccc;
+}
+
+#visual {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#visual .viContainer {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 800px;
+}
+#visual .viContainer h3 {
+  color: #eaeaea;
+  font: 700 50px/1 "Sunflower", sans-serif;
+  margin-bottom: 80px;
+}
+#visual .viContainer .viBox .viProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+#visual .viContainer .viBox .viProject li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 16.5%;
+  height: 240px;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#visual .viContainer .viBox .viProject li:hover em {
+  bottom: 0;
+}
+#visual .viContainer .viBox .viProject li img {
+  width: 260px;
+}
+#visual .viContainer .viBox .viProject li em {
+  font: 500 20px/1 "Sunflower", sans-serif;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+#visual .viContainer .viBox .imgSource {
+  margin-right: 25px;
+  text-align: end;
+  color: #ccc;
+}
+
+.bodyOpacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+.modal .modal_Close {
+  position: fixed;
+  top: 11%;
+  right: 11%;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  text-align: center;
+  padding: 5px 13px;
+  background: #3f27aa;
+  color: #C3F8FF;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.modal .modalInner {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3f27aa;
+  width: 75%;
+  height: 80%;
+  overflow-y: scroll;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.modal .modalInner .modalContent {
+  position: relative;
+  padding: 20px 10px 20px 20px;
+  display: none;
+}
+.modal .modalInner .modalContent img {
+  width: 100%;
+}
+.modal .modalInner::-webkit-scrollbar {
+  width: 13px;
+}
+.modal .modalInner::-webkit-scrollbar-thumb {
+  background: rgb(110, 210, 223);
+  border-radius: 15px;
+}
+.modal .modalInner::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.scroll_nop {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#footer {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+  font: 700 16px/1 "Noto Sans KR", sans-serif;
+  color: #a0a0a0;
+}
+#footer .footBox {
+  position: absolute;
+  bottom: 450px;
+  left: 80px;
+  font-size: 130px;
+  rotate: 15deg;
+}
+#footer .footBox::after {
+  content: "";
+  position: absolute;
+  bottom: 200px;
+  right: -730px;
+  rotate: -15deg;
+  width: 700px;
+  border: 0.5px solid #444;
+}
+#footer .footBox .footTxt {
+  color: #FFEBAD;
+}
+#footer .contBox {
+  position: absolute;
+  bottom: 437px;
+  right: 170px;
+  font: 300 30px/1 "Noto Sans KR", sans-serif;
+  z-index: 2;
+}
+#footer .contBox .contTxt::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: -25px;
+  width: 400px;
+  height: 30px;
+  background: #222;
+}
+#footer .contIconBox {
+  position: absolute;
+  bottom: 300px;
+  right: 170px;
+}
+#footer .contIconBox .contIcon {
+  display: flex;
+  margin-bottom: 10px;
+}
+#footer .contIconBox .contIcon li {
+  margin-left: 20px;
+}
+#footer .contIconBox .contIcon li a i {
+  font-size: 50px;
+  color: #C3F8FF;
+}
+#footer .copy {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  font: 100 15px/1 "Noto Sans KR", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+#footer .copy p {
+  margin-bottom: 6px;
+}
+
+@media all and (max-width: 1500px) {
+  #home .homeTxt_1 {
+    left: 50px;
+  }
+  #home .homeTxt_2 {
+    right: 60px;
+  }
+  #home .homeTxt_3 {
+    font: 700 40px/1 "Sunflower", sans-serif;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

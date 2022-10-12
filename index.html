@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./HsMini_favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/HsMini_favicon.ico" type="image/x-icon">
+  <!-- 아이콘 사용 연동 -->
+  <script src="https://kit.fontawesome.com/cfa55461bb.js" crossorigin="anonymous"></script>
+  <title>HsMini_PORTFOLIO</title>
+  <!-- scss 를 이용하여 css 에 자동 연동시킴 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <!-- 팝업창 -->
+  <div id="popup">
+    <div class="pop">
+      <p class="popTxt">## 현재 홈페이지는 width 1920px(웹화면)에 최적화 되어있습니다.</p>
+      <p>- 포트폴리오를 현재 제작중입니다.</p>
+      <p>- 태블릿, 모바일 반응형까지 진행예정입니다.</p>
+      <p>감사합니다.</p>
+      <div id="pop_Close">
+        Close
+      </div>
+    </div>
+  </div>
+
+  <!-- 헤더 -->
+  <header>
+    <!-- 로고 -->
+    <h1 class="myLogo">
+      <a href="/">
+        <img src="./img/hsmini_logo_W.png" alt="승민 로고">
+      </a>
+    </h1>
+    <!-- 메뉴 -->
+    <ul class="gnb">
+      <li><a href="#home" class="gnbHome">HOME</a></li>
+      <li><a href="#aboutMe" class="gnbAbout">ABOUT ME</a></li>
+      <li><a href="#web" class="gnbWeb">WEB</a></li>
+      <li><a href="#visual" class="gnbVisual">VISUAL</a></li>
+      <li><a href="#footer" class="gnbContact">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <!-- 위로가기 버튼 -->
+  <a href="#" class="docu_goTop">
+    <i class="fa-solid fa-circle-arrow-up"></i>
+  </a>
+
+  <!-- 홈 페이지 -->
+  <section id="home">
+    <!-- 메인텍스트 -->
+    <div class="homeTxt_1">
+      <p class="ver2022">Ver.2022</p>
+      <p class="webTxt">W<span>E</span>B</p>
+      <p class="designTxt">DESIG<span>N</span></p>
+      <p class="portfolio">PORT<span>F</span>OLIO</p>
+      <p class="projectTxt">PRO<span>J</span>ECT</p>
+    </div>
+    <!-- 목록텍스트 -->
+    <div class="homeTxt_2">
+      <p class="publisher">PUBLISHER</p>
+      <p class="webVisual">WEB & VISUAL</p>
+      <p class="variety">VARIETY</p>
+    </div>
+    <!-- 텍스트 -->
+    <div class="homeTxt_3">
+      <p><span>다양함</span>을 즐기는 <span>현승민</span>입니다.</p>
+    </div>
+  </section>
+
+  <!-- 소개 페이지 -->
+  <section id="aboutMe">
+    <div class="container">
+
+      <!-- 소개 1 -->
+      <div class="aboutBox_1">
+        <h3>ABOUT ME.</h3>
+        <div class="cropImg">
+          <img src="./img/my_img2(gray).jpg" alt="승민이미지">
+        </div>
+        <p class="aboutIntro_1">웹디자이너 현승민입니다.</p>
+        <ul class="aboutIntro_2">
+          <li>&#35;Hyun Seung Min</li>
+          <li>&#35;ENFJ</li>
+          <li>&#35;1989.05.01</li>
+          <li>
+            <a href="mailto:tmd4505@naver.com">
+              &#35;tmd4505@naver.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/seungmini89" target="_blank">
+              &#35;https://github.com/seungmini89
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 소개 2 -->
+      <div class="aboutBox_2">
+        <!-- 교육 -->
+        <div class="education">
+          <p class="aduTit">EDUCATION</p>
+          <ul class="aduMainBox">
+            <li>
+              <p class="aduMainTxt">웹 모션 디자인 + 코딩</p>
+              <p>패스트캠퍼스(온라인 강의) / 2022.07 ~</p>
+            </li>
+            <li>
+              <p class="aduMainTxt">웹 퍼블리셔 + 프론트엔드</p>
+              <p>패스트캠퍼스(온라인 강의) / 2022.07 ~</p>
+            </li>
+            <li>
+              <p class="aduMainTxt">시각편집디자인</p>
+              <p>그린컴퓨터아트학원 / 2019.03 ~ 2019.05</p>
+            </li>
+            <li>
+              <p class="aduMainTxt">웹디자인(html+css+javascript+jQuery)</p>
+              <p>그린컴퓨터아트학원 / 2019.01 ~ 2019.05</p>
+            </li>
+          </ul>
+        </div>
+        <!-- 자격증 -->
+        <div class="certification">
+          <p class="certiTit">CERTIFICATION</p>
+          <ul class="certiMainBox">
+            <li>
+              <p class="certiMainTxt">OA Master(ITQ)</p>
+              <p>2021.02</p>
+            </li>
+            <li>
+              <p class="certiMainTxt">Graphic Master(GTQ)</p>
+              <p>2020.10</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 소개 3 -->
+      <div class="aboutBox_3">
+        <!-- 역량 -->
+        <div class="ablilty">
+          <p class="abliTit">ABLILTY</p>
+          <ul class="abliMainBox">
+            <li>
+              <p class="abliMainTxt">1pixel 의 꼼꼼하고 성실함</p>
+              <p class="abliMainTxt">멘탈이 강하고 끈기있음</p>
+            </li>
+          </ul>
+        </div>
+        <!-- 스킬 -->
+        <div class="skills">
+          <p class="skilTit">SKILLS</p>
+          <ul class="skilMainBox">
+            <li><img src="img/logo_html5.jpg" alt="html5로고"></li>
+            <li><img src="img/logo_css3.jpg" alt="css3로고"></li>
+            <li><img src="img/logo_js.jpg" alt="javascript로고"></li>
+            <li><img src="img/logo_sass.jpg" alt="sass로고"></li>
+            <li><img src="img/logo_vscode.jpg" alt="vscode로고"></li>
+            <li><img src="img/logo_github.jpg" alt="github로고"></li>
+            <li><img src="img/logo_xd.jpg" alt="adobe_xd로고"></li>
+            <li><img src="img/logo_ps.jpg" alt="adobe_potoshop로고"></li>
+            <li><img src="img/logo_ai.jpg" alt="adobe_illustrator로고"></li>
+            <li><img src="img/logo_id.png" alt="adobe_indesign로고"></li>
+            <li><img src="img/logo_Pr.png" alt="adobe_premierePro로고"></li>
+            <li><img src="img/logo_Ae.png" alt="adobe_afterEffects로고"></li>
+            <li><img src="img/logo_Lr.png" alt="adobe_lightRoom로고"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 웹 프로젝트 페이지 -->
+  <section id="web">
+    <div class="webContainer">
+      <h3>WEB</h3>
+      <div class="webBox">
+        <ul class="webProject">
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="DetailPage1-여행상품 상세페이지">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="DetailPage2-다다마 상세페이지">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="컨텐츠&배너">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="UI디자인">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="https://seungmini89.github.io/HsMini_MEGABOX2022/" target="_blank">
+              <img src="./img/web_megabox.png" alt="2022메가박스">
+              <em>2022메가박스</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="반응형">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="기본 코딩">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="진행중">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="진행중">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="진행중">
+              <em>진행중</em>
+            </a>
+          </li>
+        </ul>
+        <p class="imgSource">이미지 출처: https://unsplash.com</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 시각 프로젝트 페이지 -->
+  <section id="visual">
+    <div class="viContainer">
+      <h3>VISUAL</h3>
+      <div class="viBox">
+        <ul class="viProject">
+          <li>
+            <a href="#modal_Open_11" class="modal_Open">
+              <img src="./img/vis_seoulNight.png" alt="서울문화의밤">
+              <em>서울문화의밤</em>
+            </a>
+          </li>
+          <li>
+            <a href="#modal_Open_12" class="modal_Open">
+              <img src="./img/vis_natural.png" alt="네추럴힐링">
+              <em>네추럴 힐링</em>
+            </a>
+          </li>
+          <li>
+            <a href="#modal_Open_13" class="modal_Open">
+              <img src="./img/vis_logo.png" alt="로고디자인">
+              <em>로고디자인</em>
+            </a>
+          </li>
+          <li>
+            <a href="#modal_Open_14" class="modal_Open">
+              <img src="./img/vis_photoshop.png" alt="포토샵">
+              <em>Photoshop</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/vis_illustrator.png" alt="Illustrator-일러스트">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="2023캘린더">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="프리미어프로">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="에프터이펙트">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="진행중">
+              <em>진행중</em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/visWeb_thumb.png" alt="진행중">
+              <em>진행중</em>
+            </a>
+          </li>
+        </ul>
+        <p class="imgSource">이미지 출처: https://unsplash.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 전체 배경 투명 -->
+  <div class="bodyOpacity"></div>
+
+  <!-- 모달 -->
+  <div class="modal">
+    <a href="#none" class="modal_Close">
+      <i class="fa-solid fa-xmark"></i>
+    </a>
+    <div class="modalInner">
+      <!-- <div class="modalContent modal_Open_01" id="modal_Open_01">
+        <img src="./img/seoulCulture_Detail_1.png" alt="서울문화의밤 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_02" id="modal_Open_02">
+        <img src="./img/seoulCulture_Detail_1.png" alt="서울문화의밤 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_03" id="modal_Open_03">
+        <img src="./img/seoulCulture_Detail_1.png" alt="서울문화의밤 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_04" id="modal_Open_04">
+        <img src="./img/seoulCulture_Detail_1.png" alt="서울문화의밤 상세페이지_1">
+      </div> -->
+      <div class="modalContent modal_Open_11" id="modal_Open_11">
+        <img src="./img/seoulCulture_Detail_1.png" alt="서울문화의밤 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_12" id="modal_Open_12">
+        <img src="./img/healing_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_13" id="modal_Open_13">
+        <img src="./img/logoDesign_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_14" id="modal_Open_14">
+        <img src="./img/photoshop_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <!-- <div class="modalContent modal_Open_15" id="modal_Open_15">
+        <img src="./img/logoDesign_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_16" id="modal_Open_16">
+        <img src="./img/logoDesign_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_17" id="modal_Open_17">
+        <img src="./img/logoDesign_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div>
+      <div class="modalContent modal_Open_18" id="modal_Open_18">
+        <img src="./img/logoDesign_Detail_1.png" alt="네추럴힐링카페 상세페이지_1">
+      </div> -->
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="footBox">
+      <p class="footTxt">THANK YOU</p>
+    </div>
+    <div>
+
+    </div>
+    <div class="contBox">
+      <p class="contTxt">CONTACT</p>
+    </div>
+    <div class="contIconBox">
+      <ul class="contIcon">
+        <li>
+          <a href="tel:+01092454506">
+            <i class="fa-solid fa-square-phone"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:tmd4505@naver.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/seungmini89" target="_blank">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copy">
+      <p>Copyright © V.2210_WebDesigner.HSMINI. All rights reserved.</p>
+      <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+    </div>
+  </footer>
+
+  <!-- 스크립트 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
