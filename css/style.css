@@ -475,8 +475,8 @@ header .gnb li a:hover {
   font-size: 35px;
   text-align: center;
   padding: 5px 13px;
-  background: #3f27aa;
-  color: #C3F8FF;
+  background: #18a8c2;
+  color: #bcf5ff;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
@@ -485,16 +485,18 @@ header .gnb li a:hover {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #3f27aa;
+  background: #bcf5ff;
   width: 75%;
   height: 80%;
   overflow-y: scroll;
   box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  padding: 8px;
+  border-top: 8px solid #bcf5ff;
+  border-bottom: 8px solid #bcf5ff;
 }
 .modal .modalInner .modalContent {
   position: relative;
-  padding: 20px 10px 20px 20px;
   display: none;
 }
 .modal .modalInner .modalContent img {
