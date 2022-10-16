@@ -828,6 +828,7 @@ header .btnMenu {
     font: 500 17px/1.3 "Sunflower", sans-serif;
   }
   header {
+    position: fixed;
     height: 42px;
   }
   header .myLogo {
@@ -851,7 +852,7 @@ header .btnMenu {
     font-size: 40px;
   }
   #home .homeTxt_1 {
-    top: 140px;
+    top: 130px;
     left: 30px;
     font-size: 64px;
   }
@@ -869,7 +870,7 @@ header .btnMenu {
     text-align: left;
   }
   #home .homeTxt_2 {
-    top: 480px;
+    top: 470px;
     right: 30px;
     text-align: right;
     font: 300 17px/1 "Noto Sans KR", sans-serif;
@@ -889,9 +890,51 @@ header .btnMenu {
     display: none;
   }
   #home .homeTxt_3 {
-    top: 630px;
+    top: 600px;
     right: 20px;
     font: 700 30px/1 "Sunflower", sans-serif;
+  }
+  #aboutMe {
+    height: 1800px;
+  }
+  #aboutMe .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1700px;
+  }
+  #aboutMe .container .aboutBox_1 h3 {
+    font: 700 35px/1 "Sunflower", sans-serif;
+    margin-bottom: 25px;
+  }
+  #aboutMe .container .aboutBox_1 .cropImg {
+    width: 260px;
+    height: 320px;
+  }
+  #aboutMe .container .aboutBox_1 .cropImg img {
+    margin-top: -70px;
+    width: 260px;
+  }
+  #aboutMe .container .aboutBox_1 .aboutIntro_1 {
+    font: 500 26px/1 "Sunflower", sans-serif;
+    margin-bottom: 28px;
+  }
+  #aboutMe .container .aboutBox_1 .aboutIntro_2 li {
+    font: 300 18px/1 "Sunflower", sans-serif;
+    margin-bottom: 10px;
+  }
+  #aboutMe .container .aboutBox_2 .education {
+    margin: 68px 0 110px 0;
+  }
+  #aboutMe .container .aboutBox_3 .ablilty {
+    margin: 68px 0 110px 0;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox {
+    width: 71vw;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox li {
+    margin: 0 10px 8px 0;
+    width: 55px;
   }
 }
 

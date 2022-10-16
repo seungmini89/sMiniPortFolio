@@ -958,6 +958,7 @@ header {
 
   // 헤더 부분 420px 반응형
   header {
+    position: fixed;
     height: 42px;
     .myLogo {
       margin: 3px 0 0 15px;
@@ -989,7 +990,7 @@ header {
   #home {
     // font: 700 16px/1 'Noto Sans KR', sans-serif;
     .homeTxt_1 {
-      top: 140px;
+      top: 130px;
       left: 30px;
       font-size: 64px;
       .ver2022 {
@@ -1007,7 +1008,7 @@ header {
       }
     }
     .homeTxt_2 {
-      top: 480px;
+      top: 470px;
       right: 30px;
       text-align: right;
       font: 300 17px/1 'Noto Sans KR', sans-serif;
@@ -1027,9 +1028,64 @@ header {
       }
     }
     .homeTxt_3 {
-      top: 630px;
+      top: 600px;
       right: 20px;
       font: 700 30px/1 'Sunflower', sans-serif;
+    }
+  }
+
+  // 소개 부분 420px 반응형
+  #aboutMe {
+    height: 1800px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1700px;
+      .aboutBox_1 {
+        h3 {
+          font: 700 35px/1 'Sunflower', sans-serif;
+          margin-bottom: 25px;
+        }
+        .cropImg {
+          width: 260px;
+          height: 320px;
+          img {
+            margin-top: -70px;
+            width: 260px;
+          }
+        }
+        .aboutIntro_1 {
+          font: 500 26px/1 'Sunflower', sans-serif;
+          margin-bottom: 28px;
+        }
+        .aboutIntro_2 {
+          li {
+            font: 300 18px/1 'Sunflower', sans-serif;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .aboutBox_2 {
+        .education {
+          margin: 68px 0 110px 0;
+        }
+      }
+      .aboutBox_3 {
+        .ablilty {
+          margin: 68px 0 110px 0;
+        }
+        .skills {
+          .skilMainBox {
+            width: 71vw;
+            // border: 1px solid red;
+            li {
+              margin: 0 10px 8px 0;
+              width: 55px;
+            }
+          }
+        }
+      }
     }
   }
 }
