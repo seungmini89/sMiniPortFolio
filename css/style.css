@@ -111,6 +111,9 @@ header .gnb li a:hover {
   background: rgba(195, 248, 255, 0.2);
   border-radius: 5px;
 }
+header .btnMenu {
+  display: none;
+}
 
 .docu_goTop {
   position: fixed;
@@ -137,11 +140,11 @@ header .gnb li a:hover {
 }
 #home .homeTxt_1 .ver2022 {
   font: 400 30px/1 "Noto Sans KR", sans-serif;
-  padding-left: 240px;
+  padding: 0 0 0 240px;
 }
 #home .homeTxt_1 .webTxt {
   text-align: right;
-  padding-right: 300px;
+  padding: 0 300px 0 0;
 }
 #home .homeTxt_1 .webTxt::after {
   content: "";
@@ -162,7 +165,7 @@ header .gnb li a:hover {
   border: 0.5px solid #444;
 }
 #home .homeTxt_1 .portfolio {
-  padding-left: 80px;
+  padding: 0 0 0 80px;
   color: #FFEBAD;
 }
 #home .homeTxt_1 .portfolio::after {
@@ -671,13 +674,13 @@ header .gnb li a:hover {
     font-size: 110px;
   }
   #home .homeTxt_1 .ver2022 {
-    padding-left: 280px;
+    padding: 0 0 0 280px;
   }
   #home .homeTxt_1 .webTxt {
-    padding-right: 270px;
+    padding: 0 270px 0 0;
   }
   #home .homeTxt_1 .projectTxt {
-    padding-right: 35px;
+    padding: 0 35px 0 0;
   }
   #home .homeTxt_2 {
     top: 200px;
@@ -823,6 +826,72 @@ header .gnb li a:hover {
   }
   #popup .pop .popTxt {
     font: 500 17px/1.3 "Sunflower", sans-serif;
+  }
+  header {
+    height: 42px;
+  }
+  header .myLogo {
+    margin: 3px 0 0 15px;
+  }
+  header .myLogo a img {
+    width: 70px;
+  }
+  header .gnb {
+    display: none;
+  }
+  header .btnMenu {
+    display: block;
+    color: #ccc;
+    font-size: 26px;
+    margin: 6px 15px 0 0;
+  }
+  .docu_goTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+  }
+  #home .homeTxt_1 {
+    top: 140px;
+    left: 30px;
+    font-size: 64px;
+  }
+  #home .homeTxt_1 .ver2022 {
+    font: 400 25px/1 "Noto Sans KR", sans-serif;
+    padding: 0;
+  }
+  #home .homeTxt_1 .webTxt {
+    text-align: left;
+  }
+  #home .homeTxt_1 .portfolio {
+    padding: 0;
+  }
+  #home .homeTxt_1 .projectTxt {
+    text-align: left;
+  }
+  #home .homeTxt_2 {
+    top: 480px;
+    right: 30px;
+    text-align: right;
+    font: 300 17px/1 "Noto Sans KR", sans-serif;
+  }
+  #home .homeTxt_2 .publisher {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  #home .homeTxt_2 .webVisual {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  #home .homeTxt_2 .variety {
+    color: #555;
+  }
+  #home .homeTxt_2 p::before {
+    display: none;
+  }
+  #home .homeTxt_3 {
+    top: 630px;
+    right: 20px;
+    font: 700 30px/1 "Sunflower", sans-serif;
   }
 }
 

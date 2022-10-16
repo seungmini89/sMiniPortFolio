@@ -102,6 +102,9 @@ header {
       }
     }
   }
+  .btnMenu {
+    display: none;
+  }
 }
 
 // 위로가기 버튼
@@ -129,11 +132,11 @@ header {
     transform: rotate(15deg);
     .ver2022 {
       font: 400 30px/1 'Noto Sans KR', sans-serif;
-      padding-left: 240px;
+      padding: 0 0 0 240px;
     }
     .webTxt {
       text-align: right;
-      padding-right: 300px;
+      padding: 0 300px 0 0;
       &::after {
         content: "";
         position: absolute;
@@ -156,7 +159,7 @@ header {
       }
     }
     .portfolio {
-      padding-left: 80px;
+      padding: 0 0 0 80px;
       color: #FFEBAD;
       &::after {
         content: "";
@@ -762,13 +765,13 @@ header {
       top: 140px;
       font-size: 110px;
       .ver2022 {
-        padding-left: 280px;
+        padding: 0 0 0 280px;
       }
       .webTxt {
-        padding-right: 270px;
+        padding: 0 270px 0 0;
       }
       .projectTxt {
-        padding-right: 35px;
+        padding: 0 35px 0 0;
       }
     }
     .homeTxt_2 {
@@ -954,4 +957,79 @@ header {
   }
 
   // 헤더 부분 420px 반응형
+  header {
+    height: 42px;
+    .myLogo {
+      margin: 3px 0 0 15px;
+      a {
+        img {
+          width: 70px;
+        }
+      }
+    }
+    .gnb {
+      display: none;
+    }
+    .btnMenu {
+      display: block;
+      color: #ccc;
+      font-size: 26px;
+      margin: 6px 15px 0 0;
+    }
+  }
+
+  // 위로가기 버튼 부분 420px 반응형
+  .docu_goTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+  }
+
+  // 홈 부분 420px 반응형
+  #home {
+    // font: 700 16px/1 'Noto Sans KR', sans-serif;
+    .homeTxt_1 {
+      top: 140px;
+      left: 30px;
+      font-size: 64px;
+      .ver2022 {
+        font: 400 25px/1 'Noto Sans KR', sans-serif;
+        padding: 0;
+      }
+      .webTxt {
+        text-align: left;
+      }
+      .portfolio {
+        padding: 0;
+      }
+      .projectTxt {
+        text-align: left;
+      }
+    }
+    .homeTxt_2 {
+      top: 480px;
+      right: 30px;
+      text-align: right;
+      font: 300 17px/1 'Noto Sans KR', sans-serif;
+      .publisher {
+        margin-bottom: 5px;
+        color: #555;
+      }
+      .webVisual {
+        margin-bottom: 5px;
+        color: #555;
+      }
+      .variety {
+        color: #555;
+      }
+      p::before {
+        display: none;
+      }
+    }
+    .homeTxt_3 {
+      top: 630px;
+      right: 20px;
+      font: 700 30px/1 'Sunflower', sans-serif;
+    }
+  }
 }
