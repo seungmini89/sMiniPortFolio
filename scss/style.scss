@@ -362,7 +362,6 @@ header {
   justify-content: center;
   align-items: center;
   .webContainer {
-    // border: 1px solid red;
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -375,7 +374,6 @@ header {
     .webBox {
       .webProject {
         width: 100%;
-        // border: 1px solid blue;
         display: flex;
         justify-content: space-between;
         flex-flow: wrap;
@@ -988,7 +986,6 @@ header {
 
   // 홈 부분 420px 반응형
   #home {
-    // font: 700 16px/1 'Noto Sans KR', sans-serif;
     .homeTxt_1 {
       top: 130px;
       left: 30px;
@@ -1085,6 +1082,107 @@ header {
             }
           }
         }
+      }
+    }
+  }
+
+  // 웹 프로젝트 부분 420px 반응형
+  #web {
+    height: 760px;
+    .webContainer {
+      height: 600px;
+      h3 {
+        font: 700 35px/1 'Sunflower', sans-serif;
+        margin-bottom: 20px;
+      }
+      .webBox {
+        .webProject {
+          li {
+            width: 29%;
+            height: 120px;
+            margin: 5px 5px 15px 5px;
+            img {
+              width: 140px;
+            }
+            em {
+              font: 300 13px/1 'Sunflower', sans-serif;
+              padding: 10px 0;
+            }
+          }
+        }
+        .imgSource {
+          margin-right: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  // 시각 프로젝트 부분 420px 반응형
+  #visual {
+    height: 760px;
+    .viContainer {
+      height: 600px;
+      h3 {
+        font: 700 35px/1 'Sunflower', sans-serif;
+        margin-bottom: 20px;
+      }
+      .viBox {
+        .viProject {
+          li {
+            width: 29%;
+            height: 120px;
+            margin: 5px 5px 15px 5px;
+            img {
+              width: 140px;
+            }
+            em {
+              font: 300 13px/1 'Sunflower', sans-serif;
+              padding: 10px 0;
+            }
+          }
+        }
+        .imgSource {
+          margin-right: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  // 푸터 부분 420px 반응형
+  #footer {
+    height: 760px;
+    .footBox {
+      bottom: 430px;
+      left: 30px;
+      font-size: 64px;
+    }
+    .contBox {
+      bottom: 320px;
+      right: 50%;
+      transform: translateX(50%);
+      font: 300 24px/1 'Noto Sans KR', sans-serif;
+    }
+    .contIconBox {
+      bottom: 250px;
+      right: 50%;
+      transform: translateX(50%);
+      .contIcon {
+        li {
+          margin-left: 10px;
+          margin-right: 10px;
+          a i {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .copy {
+      bottom: 20px;
+      font: 100 10px/1.3 'Noto Sans KR', sans-serif;
+      p {
+        padding: 0 12px;
       }
     }
   }

@@ -936,6 +936,91 @@ header .btnMenu {
     margin: 0 10px 8px 0;
     width: 55px;
   }
+  #web {
+    height: 760px;
+  }
+  #web .webContainer {
+    height: 600px;
+  }
+  #web .webContainer h3 {
+    font: 700 35px/1 "Sunflower", sans-serif;
+    margin-bottom: 20px;
+  }
+  #web .webContainer .webBox .webProject li {
+    width: 29%;
+    height: 120px;
+    margin: 5px 5px 15px 5px;
+  }
+  #web .webContainer .webBox .webProject li img {
+    width: 140px;
+  }
+  #web .webContainer .webBox .webProject li em {
+    font: 300 13px/1 "Sunflower", sans-serif;
+    padding: 10px 0;
+  }
+  #web .webContainer .webBox .imgSource {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  #visual {
+    height: 760px;
+  }
+  #visual .viContainer {
+    height: 600px;
+  }
+  #visual .viContainer h3 {
+    font: 700 35px/1 "Sunflower", sans-serif;
+    margin-bottom: 20px;
+  }
+  #visual .viContainer .viBox .viProject li {
+    width: 29%;
+    height: 120px;
+    margin: 5px 5px 15px 5px;
+  }
+  #visual .viContainer .viBox .viProject li img {
+    width: 140px;
+  }
+  #visual .viContainer .viBox .viProject li em {
+    font: 300 13px/1 "Sunflower", sans-serif;
+    padding: 10px 0;
+  }
+  #visual .viContainer .viBox .imgSource {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  #footer {
+    height: 760px;
+  }
+  #footer .footBox {
+    bottom: 430px;
+    left: 30px;
+    font-size: 64px;
+  }
+  #footer .contBox {
+    bottom: 320px;
+    right: 50%;
+    transform: translateX(50%);
+    font: 300 24px/1 "Noto Sans KR", sans-serif;
+  }
+  #footer .contIconBox {
+    bottom: 250px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  #footer .contIconBox .contIcon li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #footer .contIconBox .contIcon li a i {
+    font-size: 40px;
+  }
+  #footer .copy {
+    bottom: 20px;
+    font: 100 10px/1.3 "Noto Sans KR", sans-serif;
+  }
+  #footer .copy p {
+    padding: 0 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
