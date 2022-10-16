@@ -43,17 +43,16 @@ body {
     border-radius: 30px;
     border: 10px solid red;
     p {
-      font: 300 20px/1 'Sunflower', sans-serif;
+      font: 300 20px/1.3 'Sunflower', sans-serif;
       margin-bottom: 20px;
       color: #555;
-      line-height: 30px;
       letter-spacing: -1px;
     }
     .popTxt {
-      font: 500 20px/1 'Sunflower', sans-serif;
+      font: 500 20px/1.3 'Sunflower', sans-serif;
       color: rgb(158, 27, 27);
-      margin-bottom: 100px;
-      margin-top: 30px;
+      margin-bottom: 80px;
+      margin-top: 20px;
     }
     #pop_Close {
       position: absolute;
@@ -335,12 +334,11 @@ header {
         }
         .skilMainBox {
           width: 19.5vw;
-          // border: 1px solid blue;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           li {
-            margin: 0 15px 15px 0;
+            margin: 0 15px 10px 0;
             width: 70px;
             img {
               width: 100%;
@@ -647,6 +645,7 @@ header {
 
 // 미디어쿼리 1500px 일 때
 @media all and (max-width: 1500px) {
+  // 홈 부분 1500px 반응형
   #home {
     .homeTxt_1 {
       left: 50px;
@@ -658,4 +657,301 @@ header {
       font: 700 40px/1 'Sunflower', sans-serif;
     }
   }
+}
+
+// 미디어쿼리 1350px 일 때
+@media all and (max-width: 1350px) {
+  // 홈 부분 1350px 반응형
+  #home {
+    .homeTxt_1 {
+      transform: rotate(0deg);
+      .webTxt {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .designTxt {
+      &::after {
+        display: none;
+      }
+    }
+    .portfolio {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  // 소개 부분 1350px 반응형
+  #aboutMe {
+    .container {
+      .aboutBox_3 {
+        .skills {
+          .skilMainBox {
+            width: 23.6vw;
+            li {
+              width: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 웹 프로젝트 부분 1350px 반응형
+  #web {
+    .webContainer {
+      .webBox {
+        .webProject {
+          li {
+            width: 18.5%;
+            margin: 5px 5px 30px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // 시각 프로젝트 부분 1350px 반응형
+  #visual {
+    .viContainer {
+      .viBox {
+        .viProject {
+          li {
+            width: 18.5%;
+            margin: 5px 5px 30px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // 푸터 부분 1350px 반응형
+  #footer {
+    .footBox {
+      bottom: 380px;
+      transform: rotate(0deg);
+      &::after {
+        display: none;
+      }
+    }
+    .webPage_thumb {
+      display: none;
+    }
+    .contBox {
+      bottom: 350px;
+    }
+    .contIconBox {
+      bottom: 270px;
+    }
+  }
+}
+
+// 미디어쿼리 1024px 일 때
+@media all and (max-width: 1024px) {
+  // 바디 부분 1024px 반응형
+  body {
+    height: 3700px;
+  }
+
+  // 홈 부분 1024px 반응형
+  #home {
+    height: 780px;
+    .homeTxt_1 {
+      top: 140px;
+      font-size: 110px;
+      .ver2022 {
+        padding-left: 280px;
+      }
+      .webTxt {
+        padding-right: 270px;
+      }
+      .projectTxt {
+        padding-right: 35px;
+      }
+    }
+    .homeTxt_2 {
+      top: 200px;
+      right: 110px;
+      font: 300 20px/1 'Noto Sans KR', sans-serif;
+      .publisher {
+        margin-bottom: 15px;
+      }
+      .webVisual {
+        margin-bottom: 15px;
+      }
+    }
+    .homeTxt_3 {
+      top: 620px;
+      right: 100px;
+      font: 700 50px/1 'Sunflower', sans-serif;
+    }
+  }
+
+  // 소개 부분 1024px 반응형
+  #aboutMe {
+    height: 780px;
+    .container {
+      width: 90%;
+      height: 550px;
+      .aboutBox_1 {
+        h3 {
+          font: 700 45px/1 'Sunflower', sans-serif;
+          margin-bottom: 25px;
+        }
+        .cropImg {
+          width: 260px;
+          height: 320px;
+          img {
+            margin-top: -70px;
+            width: 260px;
+          }
+        }
+        .aboutIntro_1 {
+          font: 500 26px/1 'Sunflower', sans-serif;
+          margin-bottom: 28px;
+        }
+        .aboutIntro_2 {
+          li {
+            font: 300 18px/1 'Sunflower', sans-serif;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .aboutBox_2 {
+        .education {
+          margin: 68px 0 110px 0;
+        }
+      }
+      .aboutBox_3 {
+        .ablilty {
+          margin: 68px 0 110px 0;
+        }
+        .skills {
+          .skilMainBox {
+            width: 21.5vw;
+            li {
+              margin: 0 10px 5px 0;
+              width: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 웹 프로젝트 부분 1024px 반응형
+  #web {
+    height: 780px;
+    .webContainer {
+      width: 90%;
+      height: 550px;
+      h3 {
+        font: 700 45px/1 'Sunflower', sans-serif;
+        margin-bottom: 25px;
+      }
+      .webBox {
+        .webProject {
+          li {
+            width: 18.5%;
+            height: 210px;
+            margin: 5px 5px 30px 5px;
+            &:hover em {
+              bottom: 0;
+            }
+            img {
+              width: 220px;
+            }
+            em {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 시각 프로젝트 부분 1024px 반응형
+  #visual {
+    height: 780px;
+    .viContainer {
+      width: 90%;
+      height: 550px;
+      h3 {
+        font: 700 45px/1 'Sunflower', sans-serif;
+        margin-bottom: 25px;
+      }
+      .viBox {
+        .viProject {
+          li {
+            width: 18.5%;
+            height: 210px;
+            margin: 5px 5px 30px 5px;
+            &:hover em {
+              bottom: 0;
+            }
+            img {
+              width: 220px;
+            }
+            em {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 푸터 부분 1024px 반응형
+  #footer {
+    height: 780px;
+    .footBox {
+      bottom: 360px;
+      font-size: 110px;
+      transform: rotate(0deg);
+      &::after {
+        display: none;
+      }
+    }
+    .webPage_thumb {
+      display: none;
+    }
+    .contBox {
+      bottom: 320px;
+      right: 120px;
+      font: 300 24px/1 'Noto Sans KR', sans-serif;
+    }
+    .contIconBox {
+      bottom: 250px;
+      right: 120px;
+      .contIcon {
+        li {
+          a i {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 미디어쿼리 420px 일 때
+@media all and (max-width: 420px) {
+  // 팝업창 부분 420px 반응형
+  #popup {
+    .pop {
+      width: 400px;
+      height: 500px;
+      border: 6px solid red;
+      p {
+        font: 300 15px/1.3 'Sunflower', sans-serif;
+      }
+      .popTxt {
+        font: 500 17px/1.3 'Sunflower', sans-serif;
+      }
+    }
+  }
+
+  // 헤더 부분 420px 반응형
 }

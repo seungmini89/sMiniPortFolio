@@ -59,17 +59,16 @@ body::-webkit-scrollbar-track {
   border: 10px solid red;
 }
 #popup .pop p {
-  font: 300 20px/1 "Sunflower", sans-serif;
+  font: 300 20px/1.3 "Sunflower", sans-serif;
   margin-bottom: 20px;
   color: #555;
-  line-height: 30px;
   letter-spacing: -1px;
 }
 #popup .pop .popTxt {
-  font: 500 20px/1 "Sunflower", sans-serif;
+  font: 500 20px/1.3 "Sunflower", sans-serif;
   color: rgb(158, 27, 27);
-  margin-bottom: 100px;
-  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-top: 20px;
 }
 #popup .pop #pop_Close {
   position: absolute;
@@ -322,7 +321,7 @@ header .gnb li a:hover {
   flex-wrap: wrap;
 }
 #aboutMe .container .aboutBox_3 .skills .skilMainBox li {
-  margin: 0 15px 15px 0;
+  margin: 0 15px 10px 0;
   width: 70px;
 }
 #aboutMe .container .aboutBox_3 .skills .skilMainBox li img {
@@ -614,6 +613,216 @@ header .gnb li a:hover {
   }
   #home .homeTxt_3 {
     font: 700 40px/1 "Sunflower", sans-serif;
+  }
+}
+@media all and (max-width: 1350px) {
+  #home .homeTxt_1 {
+    transform: rotate(0deg);
+  }
+  #home .homeTxt_1 .webTxt::after {
+    display: none;
+  }
+  #home .designTxt::after {
+    display: none;
+  }
+  #home .portfolio::after {
+    display: none;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox {
+    width: 23.6vw;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox li {
+    width: 65px;
+  }
+  #web .webContainer .webBox .webProject li {
+    width: 18.5%;
+    margin: 5px 5px 30px 5px;
+  }
+  #visual .viContainer .viBox .viProject li {
+    width: 18.5%;
+    margin: 5px 5px 30px 5px;
+  }
+  #footer .footBox {
+    bottom: 380px;
+    transform: rotate(0deg);
+  }
+  #footer .footBox::after {
+    display: none;
+  }
+  #footer .webPage_thumb {
+    display: none;
+  }
+  #footer .contBox {
+    bottom: 350px;
+  }
+  #footer .contIconBox {
+    bottom: 270px;
+  }
+}
+@media all and (max-width: 1024px) {
+  body {
+    height: 3700px;
+  }
+  #home {
+    height: 780px;
+  }
+  #home .homeTxt_1 {
+    top: 140px;
+    font-size: 110px;
+  }
+  #home .homeTxt_1 .ver2022 {
+    padding-left: 280px;
+  }
+  #home .homeTxt_1 .webTxt {
+    padding-right: 270px;
+  }
+  #home .homeTxt_1 .projectTxt {
+    padding-right: 35px;
+  }
+  #home .homeTxt_2 {
+    top: 200px;
+    right: 110px;
+    font: 300 20px/1 "Noto Sans KR", sans-serif;
+  }
+  #home .homeTxt_2 .publisher {
+    margin-bottom: 15px;
+  }
+  #home .homeTxt_2 .webVisual {
+    margin-bottom: 15px;
+  }
+  #home .homeTxt_3 {
+    top: 620px;
+    right: 100px;
+    font: 700 50px/1 "Sunflower", sans-serif;
+  }
+  #aboutMe {
+    height: 780px;
+  }
+  #aboutMe .container {
+    width: 90%;
+    height: 550px;
+  }
+  #aboutMe .container .aboutBox_1 h3 {
+    font: 700 45px/1 "Sunflower", sans-serif;
+    margin-bottom: 25px;
+  }
+  #aboutMe .container .aboutBox_1 .cropImg {
+    width: 260px;
+    height: 320px;
+  }
+  #aboutMe .container .aboutBox_1 .cropImg img {
+    margin-top: -70px;
+    width: 260px;
+  }
+  #aboutMe .container .aboutBox_1 .aboutIntro_1 {
+    font: 500 26px/1 "Sunflower", sans-serif;
+    margin-bottom: 28px;
+  }
+  #aboutMe .container .aboutBox_1 .aboutIntro_2 li {
+    font: 300 18px/1 "Sunflower", sans-serif;
+    margin-bottom: 10px;
+  }
+  #aboutMe .container .aboutBox_2 .education {
+    margin: 68px 0 110px 0;
+  }
+  #aboutMe .container .aboutBox_3 .ablilty {
+    margin: 68px 0 110px 0;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox {
+    width: 21.5vw;
+  }
+  #aboutMe .container .aboutBox_3 .skills .skilMainBox li {
+    margin: 0 10px 5px 0;
+    width: 55px;
+  }
+  #web {
+    height: 780px;
+  }
+  #web .webContainer {
+    width: 90%;
+    height: 550px;
+  }
+  #web .webContainer h3 {
+    font: 700 45px/1 "Sunflower", sans-serif;
+    margin-bottom: 25px;
+  }
+  #web .webContainer .webBox .webProject li {
+    width: 18.5%;
+    height: 210px;
+    margin: 5px 5px 30px 5px;
+  }
+  #web .webContainer .webBox .webProject li:hover em {
+    bottom: 0;
+  }
+  #web .webContainer .webBox .webProject li img {
+    width: 220px;
+  }
+  #web .webContainer .webBox .webProject li em {
+    bottom: 0;
+  }
+  #visual {
+    height: 780px;
+  }
+  #visual .viContainer {
+    width: 90%;
+    height: 550px;
+  }
+  #visual .viContainer h3 {
+    font: 700 45px/1 "Sunflower", sans-serif;
+    margin-bottom: 25px;
+  }
+  #visual .viContainer .viBox .viProject li {
+    width: 18.5%;
+    height: 210px;
+    margin: 5px 5px 30px 5px;
+  }
+  #visual .viContainer .viBox .viProject li:hover em {
+    bottom: 0;
+  }
+  #visual .viContainer .viBox .viProject li img {
+    width: 220px;
+  }
+  #visual .viContainer .viBox .viProject li em {
+    bottom: 0;
+  }
+  #footer {
+    height: 780px;
+  }
+  #footer .footBox {
+    bottom: 360px;
+    font-size: 110px;
+    transform: rotate(0deg);
+  }
+  #footer .footBox::after {
+    display: none;
+  }
+  #footer .webPage_thumb {
+    display: none;
+  }
+  #footer .contBox {
+    bottom: 320px;
+    right: 120px;
+    font: 300 24px/1 "Noto Sans KR", sans-serif;
+  }
+  #footer .contIconBox {
+    bottom: 250px;
+    right: 120px;
+  }
+  #footer .contIconBox .contIcon li a i {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 420px) {
+  #popup .pop {
+    width: 400px;
+    height: 500px;
+    border: 6px solid red;
+  }
+  #popup .pop p {
+    font: 300 15px/1.3 "Sunflower", sans-serif;
+  }
+  #popup .pop .popTxt {
+    font: 500 17px/1.3 "Sunflower", sans-serif;
   }
 }
 
