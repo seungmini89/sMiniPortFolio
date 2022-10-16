@@ -993,7 +993,7 @@ header .btnMenu {
   }
   #footer .footBox {
     bottom: 430px;
-    left: 30px;
+    left: 27px;
     font-size: 64px;
   }
   #footer .contBox {
@@ -1016,10 +1016,11 @@ header .btnMenu {
   }
   #footer .copy {
     bottom: 20px;
-    font: 100 10px/1.3 "Noto Sans KR", sans-serif;
+    font: 100 12px/1 "Noto Sans KR", sans-serif;
   }
   #footer .copy p {
     padding: 0 12px;
+    letter-spacing: 0;
   }
 }
 
